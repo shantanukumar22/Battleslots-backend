@@ -9,10 +9,7 @@ const userSchema = new mongoose.Schema({
   walletBalance: { type: Number, default: 0 },
   profilePic: { type: String, default: null }, // This field should store the profile picture URL
   upiId: { type: String, default: null }, // UPI ID field
-  totalPrizes: {
-    type: Number,
-    default: 0,
-  },
+  totalPrizes: { type: Number, default: 0 },
 });
 
 export default mongoose.model("User", userSchema);
