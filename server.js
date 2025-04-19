@@ -13,7 +13,6 @@ import transactionRoutes from "./routes/transactionRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import paymentRoutes from "./routes/paymentRoutes.js";
 import leaderboardRoutes from "./routes/leaderboardRoutes.js";
-
 dotenv.config();
 connectDB();
 
