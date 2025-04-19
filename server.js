@@ -12,6 +12,7 @@ import adminPayoutRoutes from "./routes/adminPayoutRoutes.js";
 import transactionRoutes from "./routes/transactionRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import paymentRoutes from "./routes/paymentRoutes.js";
+import leaderboardRoutes from "./routes/leaderboardRoutes.js";
 
 dotenv.config();
 connectDB();
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(express.json());
+app.use("/api/leaderboard", leaderboardRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/timeslots", timeSlotRoutes);
